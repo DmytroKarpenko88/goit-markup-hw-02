@@ -2,117 +2,143 @@
 
 /* font-family: 'Raleway', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
+:root {
+  --main-text-color: #212121;
+  --background-color: #ffffff;
+  --additional-text-color: #757575;
+  --btn-color: #2196f3;
+  --btn-active-color: #188ce8;
+  --container-color: #eeeeee;
+  --logo-text-color: #000000;
+  --section-background-color: #f5f4fa;
+  --secondary-text-color: #ffffff;
+  --background-color: #2f303a;
+  --line-color: #ececec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
-    max-width: 1600px;
-    color: #212121;
+  max-width: 1600px;
+  color: #212121;
 }
 
 * {
-    text-decoration: none;
-    list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
 
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-    color: #000;
+  color: #000;
 }
 
 .logo span {
-    color: #2196F3;
+  color: #2196f3;
 }
 
-.links-nav, .contacts {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+.links-nav,
+.contacts {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .links-nav a {
-    color: #212121;
+  color: #212121;
 }
 
-.mail { 
-    color: #2196F3;
+.mail {
+  color: #2196f3;
 }
 
 .tel {
-    color: #757575;
-} 
+  color: #757575;
+}
 
-a[href$="portfolio.html"] {
-    color: #2196F3;
+a[href$='portfolio.html'] {
+  color: #2196f3;
 }
 
 .btn {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    /* color: #212121; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: #212121; */
 
-    border: none;
-    background: #F5F4FA;
-    border-radius: 4px;
-    padding: 6px 22px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .projects h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 }
 
 .projects p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
 
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-    color: #757575;
-    }
+  color: #757575;
+}
 
-    .footer {
-        background-color: #2F303A;
-    }
+.footer {
+  background-color: #2f303a;
+}
 
-    .footer-content {
-        margin: 60px auto 60px 215px;
-          
-    }
-    .footer .address, .footer .logo {
-        color: #fff;
-    }
+.footer-content {
+  margin: 60px auto 60px 215px;
+}
+.footer .address,
+.footer .logo {
+  color: #fff;
+}
 
-    .footer .mail, .footer .tel {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
+.footer .mail,
+.footer .tel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-    }
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
