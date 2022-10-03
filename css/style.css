@@ -4,17 +4,31 @@
 /* font-family: 'Roboto', sans-serif; */
 :root {
   --main-text-color: #212121;
-  --background-color: #FFFFFF;
-  --footer-background-color: #2F303A;
+  --background-color: #ffffff;
+  --main-footer-background-color: #2f303a;
   --additional-text-color: #757575;
-  --btn-color: #2196F3;
-  --btn-active-color: #188CE8;
-  --container-color: #EEEEEE;
+  --btn-color: #2196f3;
+  --btn-active-color: #188ce8;
+  --container-color: #eeeeee;
   --logo-text-color: #000000;
-  --section-background-color: #F5F4FA;
-  --secondary-text-color: #FFFFFF; 
-  --line-color: #ECECEC;
+  --section-background-color: #f5f4fa;
+  --secondary-text-color: #ffffff;
+  --line-color: #ececec;
   --main-font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1,
@@ -29,6 +43,7 @@ p {
 
 body {
   font-family: var(--main-font-family);
+  font-style: normal;
   max-width: 1600px;
   color: var(--main-text-color);
 }
@@ -40,14 +55,10 @@ body {
 
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-
+  line-height: 1.2em;
   letter-spacing: 0.03em;
-
   color: var(--logo-text-color);
 }
 
@@ -67,13 +78,13 @@ body {
   color: var(--logo-text-color);
 }
 
-.links-nav a:hover,
-.links-nav a:focus {
-  color: var(--btn-active-color);;
+a.current-page {
+  color: var(--btn-color);
 }
 
-a[href$='portfolio.html'] {
-  color: var(--btn-active-color);
+.links-nav a:hover,
+.links-nav a:focus {
+  color: var(--btn-color);
 }
 
 .header-contacts a {
@@ -82,9 +93,42 @@ a[href$='portfolio.html'] {
 
 .header-contacts a:hover,
 .header-contacts a:focus {
-  color: var(--btn-active-color);
+  color: var(--btn-color);
 }
 
+.hero {
+  background-color: var(--main-footer-background-color);
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.btn {
+  background-color: var(--btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-active-color);
+}
 
 .filter-btn {
   font-style: normal;
@@ -92,7 +136,7 @@ a[href$='portfolio.html'] {
   font-size: 16px;
   line-height: 26px;
   line-height: 1.62em;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
   border: none;
   background-color: var(--section-background-color);
@@ -107,13 +151,54 @@ a[href$='portfolio.html'] {
   color: var(--secondary-text-color);
 }
 
+.features {
+  font-size: 14px;
+}
+
+.feature-title {
+  font-weight: 700;
+  line-height: 16px;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--additional-text-color);
+}
+
+.what-we-do-title,
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  line-height: 1.2em;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.our-team-name {
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+}
+
+.our-team-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+}
+
 .project-title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
-  /* identical to box height, or 200% */
-
   letter-spacing: 0.06em;
 }
 
@@ -122,20 +207,12 @@ a[href$='portfolio.html'] {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88em;
-  /* identical to box height, or 188% */
-
   letter-spacing: 0.03em;
-
   color: var(--additional-text-color);
 }
 
-
-
-
-
-
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: var(--main-footer-background-color);
 }
 
 .footer-content a {
@@ -159,6 +236,6 @@ a[href$='portfolio.html'] {
   line-height: 24px;
   /* or 171% */
 
-  /* letter-spacing: 0.03em;
+/* letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-} */ 
+} */
