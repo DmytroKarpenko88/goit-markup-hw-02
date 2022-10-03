@@ -98,6 +98,7 @@ a[href$='portfolio.html'] {
   background-color: var(--section-background-color);
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .filter-btn:hover,
