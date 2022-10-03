@@ -59,7 +59,7 @@ body {
 .contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: 0.02em;
 }
 
@@ -91,12 +91,11 @@ a[href$='portfolio.html'] {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  line-height: 1.62em;
   text-align: center;
   letter-spacing: 0.03em;
-  /* color: #212121; */
-
   border: none;
-  background: var(--section-background-color);
+  background-color: var(--section-background-color);
   border-radius: 4px;
   padding: 6px 22px;
 }
@@ -111,7 +110,7 @@ a[href$='portfolio.html'] {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2em;
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
@@ -121,7 +120,7 @@ a[href$='portfolio.html'] {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88em;
   /* identical to box height, or 188% */
 
   letter-spacing: 0.03em;
@@ -143,7 +142,7 @@ a[href$='portfolio.html'] {
 }
 
 .address-link a {
-  color: var(--additional-text-color);
+  opacity: 0.6;
 }
 
 .address :hover,
